@@ -1,6 +1,6 @@
 # Notice
-This is a modified version which will spark-2.11-hadoop2.7 as the version so hive support here is not tested.
-The spark-notebook image is built with spark-2.11 and there is no available image so it is added after modified.
+This is a modified version using spark-2.11-hadoop2.7 so hive support is not tested.
+Since there is no available image of spark-notebook with spark-2.11-hadoop2.7, the Dockerfile for spark-notebook is modified and included.
 
 # How to use HDFS/Spark Workbench
 
