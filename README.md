@@ -1,3 +1,7 @@
+# Notice
+This is a modified version which will spark-2.11-hadoop2.7 as the version so hive support here is not tested.
+The spark-notebook image is built with spark-2.11 and there is no available image so it is added after modified.
+
 # How to use HDFS/Spark Workbench
 
 To start an HDFS/Spark Workbench:
@@ -8,16 +12,6 @@ To start an HDFS/Spark Workbench:
 To scale up spark-workers:
 ```
     docker-compose scale spark-worker=3
-```
-
-## Starting workbench with Hive support
-
-Before starting the next command, check that the previous service is running correctly (with docker logs servicename).
-```
-docker-compose -f docker-compose-hive.yml up -d namenode hive-metastore-postgresql
-docker-compose -f docker-compose-hive.yml up -d datanode hive-metastore
-docker-compose -f docker-compose-hive.yml up -d hive-server
-docker-compose -f docker-compose-hive.yml up -d spark-master spark-worker spark-notebook hue
 ```
 
 ## Interfaces
